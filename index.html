@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaDA-Band Audio Demos</title>
+    <style>
+      :root {
+        --paper: #f7f1e7;
+        --panel: rgba(255, 251, 245, 0.88);
+        --ink: #1f1b16;
+        --muted: #6c5f51;
+        --line: rgba(79, 63, 45, 0.18);
+        --accent: #a6512d;
+        --accent-soft: rgba(166, 81, 45, 0.12);
+        --shadow: 0 20px 60px rgba(39, 26, 15, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(166, 81, 45, 0.18), transparent 30%),
+          radial-gradient(circle at top right, rgba(57, 109, 107, 0.12), transparent 28%),
+          linear-gradient(180deg, #fcf8f2 0%, var(--paper) 100%);
+      }
+
+      .shell {
+        width: min(1200px, calc(100% - 32px));
+        margin: 32px auto 56px;
+      }
+
+      .hero,
+      .section {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(8px);
+      }
+
+      .hero {
+        padding: 28px;
+        margin-bottom: 24px;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        font-weight: 700;
+      }
+
+      h1 {
+        font-size: clamp(32px, 6vw, 56px);
+        line-height: 0.95;
+        max-width: 10ch;
+      }
+
+      .lead {
+        max-width: 72ch;
+        margin: 16px 0 0;
+        font-size: 17px;
+        line-height: 1.65;
+        color: var(--muted);
+      }
+
+      .section {
+        padding: 22px 22px 18px;
+        margin-top: 22px;
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: end;
+        margin-bottom: 16px;
+      }
+
+      .section-note {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 48ch;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 980px;
+        background: rgba(255, 255, 255, 0.42);
+      }
+
+      thead th {
+        position: sticky;
+        top: 0;
+        background: rgba(252, 248, 242, 0.96);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      th,
+      td {
+        padding: 14px 16px;
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+        vertical-align: middle;
+      }
+
+      tbody tr:nth-child(odd) {
+        background: rgba(166, 81, 45, 0.03);
+      }
+
+      tbody tr:hover {
+        background: var(--accent-soft);
+      }
+
+      .sample {
+        font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .desc {
+        color: var(--muted);
+        min-width: 180px;
+      }
+
+      .method {
+        min-width: 220px;
+      }
+
+      audio {
+        width: 100%;
+        min-width: 200px;
+        height: 40px;
+      }
+
+      .footer {
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      code {
+        font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+        font-size: 0.95em;
+      }
+
+      @media (max-width: 720px) {
+        .shell {
+          width: min(100% - 20px, 100%);
+          margin: 20px auto 32px;
+        }
+
+        .hero,
+        .section {
+          border-radius: 18px;
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .section-head {
+          display: block;
+        }
+
+        h1 {
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Anonymous Demo Repository</p>
+        <h1>LaDA-Band Audio Demos</h1>
+        <p class="lead">
+          This page is intended for direct browser playback after enabling GitHub
+          Pages on the repository root. It mirrors the comparison table in the
+          README and provides embedded players for LaDA-Band and the baselines.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">IHP</p>
+            <h2>Selected Full-Song Demos</h2>
+          </div>
+          <p class="section-note">
+            Each row keeps a placeholder description column so short qualitative
+            notes can be added later for the anonymous release.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Sample ID</th>
+                <th>Description</th>
+                <th>LaDA-Band</th>
+                <th>ACE-Step</th>
+                <th>SongEcho</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sample">K1</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/K1-LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/K1-ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/K1-SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">1295543</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/1295543-LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/1295543-ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/1295543-SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">203371576</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/203371576-LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/203371576-ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/203371576-SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">231590549</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/231590549-LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/231590549-ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-IHP/231590549-SongEcho.mp3"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Suno70K</p>
+            <h2>Full Song ID Coverage</h2>
+          </div>
+          <p class="section-note">
+            All Suno70K song IDs currently present in the repository are listed
+            here, matching the README table.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Sample ID</th>
+                <th>Description</th>
+                <th>LaDA-Band</th>
+                <th>ACE-Step</th>
+                <th>SongEcho</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sample">016c59c3-f5b1-47aa-abc0-1877028246bd</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/016c59c3-f5b1-47aa-abc0-1877028246bd_LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/016c59c3-f5b1-47aa-abc0-1877028246bd_ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/016c59c3-f5b1-47aa-abc0-1877028246bd_SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">1452825e-2b11-4eb3-97c9-bec920e4bd48</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/1452825e-2b11-4eb3-97c9-bec920e4bd48_LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/1452825e-2b11-4eb3-97c9-bec920e4bd48_ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/1452825e-2b11-4eb3-97c9-bec920e4bd48_SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">1fdda29f-ffad-4158-bc49-28dde33ae8d3</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/1fdda29f-ffad-4158-bc49-28dde33ae8d3_LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/1fdda29f-ffad-4158-bc49-28dde33ae8d3_ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/1fdda29f-ffad-4158-bc49-28dde33ae8d3_SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">2615a4f8-7046-4b8b-bce7-f4d42130f3b4</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/2615a4f8-7046-4b8b-bce7-f4d42130f3b4_LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/2615a4f8-7046-4b8b-bce7-f4d42130f3b4_ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/2615a4f8-7046-4b8b-bce7-f4d42130f3b4_SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">316c90f7-d95a-4f51-a864-96c5491303a9</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/316c90f7-d95a-4f51-a864-96c5491303a9_LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/316c90f7-d95a-4f51-a864-96c5491303a9_ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/316c90f7-d95a-4f51-a864-96c5491303a9_SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">32daa9cf-9aa5-4396-a6ac-9b16735b30f1</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/32daa9cf-9aa5-4396-a6ac-9b16735b30f1_LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/32daa9cf-9aa5-4396-a6ac-9b16735b30f1_ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/32daa9cf-9aa5-4396-a6ac-9b16735b30f1_SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">40174079-70b4-4d5d-98bc-5938fd82fc8c</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/40174079-70b4-4d5d-98bc-5938fd82fc8c_LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/40174079-70b4-4d5d-98bc-5938fd82fc8c_ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/40174079-70b4-4d5d-98bc-5938fd82fc8c_SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">5b299c5a-7e94-498d-a5ff-44febd80b94c</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/5b299c5a-7e94-498d-a5ff-44febd80b94c_LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/5b299c5a-7e94-498d-a5ff-44febd80b94c_ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/5b299c5a-7e94-498d-a5ff-44febd80b94c_SongEcho.mp3"></audio></td>
+              </tr>
+              <tr>
+                <td class="sample">6308f2f8-887a-4cf8-a366-955dcfeabed9</td>
+                <td class="desc">TBD</td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/6308f2f8-887a-4cf8-a366-955dcfeabed9_LaDA-Band.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/6308f2f8-887a-4cf8-a366-955dcfeabed9_ACE-Step.mp3"></audio></td>
+                <td class="method"><audio controls preload="none" src="full-song-demo-suno70k/6308f2f8-887a-4cf8-a366-955dcfeabed9_SongEcho.mp3"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footer">
+          If a browser blocks autoplay or preloading, the players still work after
+          manually pressing play. All players use <code>preload="none"</code> to
+          keep the page lightweight.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
