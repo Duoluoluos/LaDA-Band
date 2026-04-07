@@ -8,7 +8,7 @@ All links below use the direct anonymous file endpoint for faster loading and pl
 For double-blind review, this repository currently contains demo audio only.  
 Code, checkpoints, and additional materials will be released after the review process.
 
-## Selected Full-Song Demos on IHP
+## Selected Full-Song Demos on IHP (Zeroshot Settings) 
 
 | Sample ID | Description | LaDA-Band | ACE-Step | SongEcho |
 | --- | --- | --- | --- | --- |
@@ -17,7 +17,7 @@ Code, checkpoints, and additional materials will be released after the review pr
 | 203371576 | A melodic indie rock track featuring a male vocalist, accompanied by a blend of acoustic and electric guitars, drums, and bass, creating a reflective and introspective mood. | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-IHP/203371576-LaDA-Band.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-IHP/203371576-ACE-Step.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-IHP/203371576-SongEcho.mp3?v=0) |
 | 231590549 | A melodic indie rock track featuring a male vocalist, accompanied by a blend of acoustic and electric guitars, drums, and bass, creating a reflective and introspective mood. | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-IHP/231590549-LaDA-Band.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-IHP/231590549-ACE-Step.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-IHP/231590549-SongEcho.mp3?v=0) |
 
-## Selected Full-Song Demos on Suno70K
+## Selected Full-Song Demos on Suno70K (Zeroshot Settings) 
 
 | Sample ID | Description | LaDA-Band | ACE-Step | SongEcho |
 | --- | --- | --- | --- | --- |
@@ -31,8 +31,14 @@ Code, checkpoints, and additional materials will be released after the review pr
 | 5b299c5a-7e94-498d-a5ff-44febd80b94c | pop, female vocal, piano, emotional, sad, slow-tempo, C major | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-suno70k/5b299c5a-7e94-498d-a5ff-44febd80b94c_LaDA-Band.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-suno70k/5b299c5a-7e94-498d-a5ff-44febd80b94c_ACE-Step.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-suno70k/5b299c5a-7e94-498d-a5ff-44febd80b94c_SongEcho.mp3?v=0) |
 | 6308f2f8-887a-4cf8-a366-955dcfeabed9 | pop, folk, singer-songwriter, sad, slow-tempo, acoustic guitar, piano, strings, violin, viola, cello, double bass, harp, flute, clarinet, oboe, English vocals, 60.0 bpm | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-suno70k/6308f2f8-887a-4cf8-a366-955dcfeabed9_LaDA-Band.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-suno70k/6308f2f8-887a-4cf8-a366-955dcfeabed9_ACE-Step.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/full-song-demo-suno70k/6308f2f8-887a-4cf8-a366-955dcfeabed9_SongEcho.mp3?v=0) |
 
+## Ablation Example
+
+| Sample ID | Description | LaDA-Band | w/o RTD | w/o Stage2 | SOTA Cont. Diff. |
+| --- | --- | --- | --- | --- | --- |
+| A1 | A soulful pop ballad featuring a poignant piano melody and emotive female vocals, evoking feelings of heartache and longing. This track has an emotional, melancholic mood. | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/ablation/Disc_Diff_%28Ours%20LaDA%29.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/ablation/LaDA_wo_RTD.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/ablation/LaDA_wo_Stage2.mp3?v=0) | [Listen](https://anonymous.4open.science/api/repo/LaDA-Band-E850/file/ablation/Sota_Cont_Diff.mp3?v=0) |
+
 ## Repository Layout
 
 - `full-song-demo-IHP/`: selected IHP full-song comparison demos.
 - `full-song-demo-suno70k/`: selected Suno70K full-song comparison demos.
-
+- `ablation/`: audio comparisons for example ablation settings.
