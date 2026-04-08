@@ -15,7 +15,7 @@ Code, checkpoints, and additional materials will be released after the review pr
 
 ## Selected Full-Song Demos on IHP (Zeroshot Settings)
 
-| Sample ID | Description | LaDA-Band(3.0B)(Ours) | ACE-Step 1.5 (3.7B) | SongEcho(3.7B)(ICLR2026) |
+| Sample ID | Description | LaDA-Band(3.0B)(Ours) | ACE-Step-1.5(3.7B)(2026 Jan.) | SongEcho(3.7B)(ICLR2026) |
 | --- | --- | --- | --- | --- |
 | K1 | A lively pop track with a catchy melody and upbeat rhythm, featuring electric guitars and synthesizers. This track has a upbeat, energetic, optimistic mood. synthesizer. | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/k1-lada-band-5?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/k1-ace-step-12?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/k1-songecho-1?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) |
 | 1295543 | A soulful track with smooth vocals and a groovy rhythm, evoking a sense of nostalgia and emotional depth. | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/1295543-lada-band-2?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/1295543-ace-step-6?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/1295543-songecho-7?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) |
