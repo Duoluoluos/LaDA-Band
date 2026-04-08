@@ -24,7 +24,7 @@ Code, checkpoints, and additional materials will be released after the review pr
 
 ## Selected Full-Song Demos on Suno70K (Zeroshot Settings)
 
-| Sample ID | Description | LaDA-Band(3.0B)(Ours) | ACE-Step 1.5 (3.7B) | SongEcho(3.7B)(ICLR2026) |
+| Sample ID | Description | LaDA-Band(3.0B)(Ours) | ACE-Step-1.5(3.7B)(2026 Jan.) | SongEcho(3.7B)(ICLR2026) |
 | --- | --- | --- | --- | --- |
 | 016c59c3-f5b1-47aa-abc0-1877028246bd | pop, female vocal, synth-pop, dreamy, soaring, euphoric, 103.508 bpm, C minor, synth textures, driving, atmospheric | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/016c59c3-f5b1-47aa-abc0-1877028246bd_lada-band-4?in=ko9isjyplxrb/sets/anonymous-zeroshot-suno70k) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/016c59c3-f5b1-47aa-abc0-1877028246bd_ace-step-18?in=ko9isjyplxrb/sets/anonymous-zeroshot-suno70k) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/016c59c3-f5b1-47aa-abc0-1877028246bd_songecho-12?in=ko9isjyplxrb/sets/anonymous-zeroshot-suno70k) |
 | 1452825e-2b11-4eb3-97c9-bec920e4bd48 | country, male vocal, country rock, driving, atmospheric | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/1452825e-2b11-4eb3-97c9-bec920e4bd48_lada-band-27?in=ko9isjyplxrb/sets/anonymous-zeroshot-suno70k) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/1452825e-2b11-4eb3-97c9-bec920e4bd48_ace-step-20?in=ko9isjyplxrb/sets/anonymous-zeroshot-suno70k) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/1452825e-2b11-4eb3-97c9-bec920e4bd48_songecho-15?in=ko9isjyplxrb/sets/anonymous-zeroshot-suno70k) |
