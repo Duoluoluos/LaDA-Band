@@ -7,7 +7,7 @@ This repository was frozen on April 8, UTC-8, 2026.
 
 In simple terms, the accompaniment should sound natural, follow the vocal throughout the entire song without drifting, and change its instrumentation and energy across sections like a real arrangement.
 
-![LaDA-Startup](./teaser_figure.png)
+![LaDA-Startup](./teaser_figure_01(1).png)
 
 This repository hosts selected full-song demos for qualitative comparison against **strong baselines proposed in 2026**.  
 
