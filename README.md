@@ -1,9 +1,16 @@
-# LaDA-Band(3.0B)(Ours)
+# LaDA-Band-Demo
 
-Anonymous audio demo repository for **LaDA-Band(3.0B)(Ours)**.
+Anonymous audio demo repository for **LaDA-Band**.
+This repository was frozen on April 8, UTC-8, 2026.
 
-This repository hosts selected full-song demos for qualitative comparison against strong baselines.  
-All demo links below point to public SoundCloud tracks for more reliable playback and smoother in-browser listening.
+**LaDA-Band** generates full-song accompaniment from vocal and text inputs, optionally with a reference audio, while addressing three challenges at once: sound quality, song-level alignment, and arrangement evolution.
+
+In simple terms, the accompaniment should sound natural, follow the vocal throughout the entire song without drifting, and change its instrumentation and energy across sections like a real arrangement.
+
+![LaDA-Startup](./teaser_figure.png)
+
+This repository hosts selected full-song demos for qualitative comparison against **strong baselines proposed in 2026**.  
+
 
 Playlists:
 - IHP Zeroshot: [anonymous-zeroshot-IHP](https://soundcloud.com/ko9isjyplxrb/sets/anonymous-zeroshot-ihp)
@@ -19,8 +26,8 @@ Code, checkpoints, and additional materials will be released after the review pr
 | --- | --- | --- | --- | --- |
 | K1 | A lively pop track with a catchy melody and upbeat rhythm, featuring electric guitars and synthesizers. This track has a upbeat, energetic, optimistic mood. synthesizer. | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/k1-lada-band-5?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/k1-ace-step-12?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/k1-songecho-1?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) |
 | 1295543 | A soulful track with smooth vocals and a groovy rhythm, evoking a sense of nostalgia and emotional depth. | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/1295543-lada-band-2?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/1295543-ace-step-6?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/1295543-songecho-7?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) |
-| 203371576 | A melodic indie rock track featuring a male vocalist, accompanied by a blend of acoustic and electric guitars, drums, and bass, creating a reflective and introspective mood. | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/203371576-lada-band-3?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/203371576-ace-step-8?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/203371576-songecho-9?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) |
-| 231590549 | A melodic indie rock track featuring a male vocalist, accompanied by a blend of acoustic and electric guitars, drums, and bass, creating a reflective and introspective mood. | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/231590549-lada-band-4?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/231590549-ace-step-10?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/231590549-songecho-11?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) |
+| 203371576 | A melodic indie rock track featuring a male vocalist, accompanied by a blend of piano, drums, and bass, creating a reflective and introspective mood. | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/203371576-lada-band-3?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/203371576-ace-step-8?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/203371576-songecho-9?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) |
+| 231590549 | A vibrant electronic track with pulsating synths and a catchy pop melody, creating an uplifting and energetic atmosphere. | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/231590549-lada-band-4?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/231590549-ace-step-10?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) | [SoundCloud](https://soundcloud.com/ko9isjyplxrb/231590549-songecho-11?in=ko9isjyplxrb/sets/anonymous-zeroshot-ihp) |
 
 ## Selected Full-Song Demos on Suno70K (Zeroshot Settings)
 
