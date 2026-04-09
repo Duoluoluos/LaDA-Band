@@ -3,7 +3,7 @@
 Anonymous audio demo repository for **LaDA-Band**.
 This repository was frozen on April 8, UTC-8, 2026.
 
-**LaDA-Band** generates full-song accompaniment from vocal and text inputs, optionally with a reference audio, while addressing three challenges at once: sound quality, song-level alignment, and arrangement evolution.
+**LaDA-Band** is a *zero-shot* vocal-to-accompaniment system that generates full-song accompaniment from vocal and text inputs. It addresses three challenges at once: dynamic orchestration, global coherence, acoustic authenticity.
 
 In simple terms, the accompaniment should sound natural, follow the vocal throughout the entire song without drifting, and change its instrumentation and energy across sections like a real arrangement.
 
