@@ -10,6 +10,7 @@ In simple terms, the accompaniment should sound natural, follow the vocal throug
 <p align="center">
   <img src="teaser_figure_01(1).png" alt="LaDA-Band overview" width="350">
 </p>
+
 This repository hosts selected full-song demos for qualitative comparison against **strong baselines proposed in 2026**.  
 
 
