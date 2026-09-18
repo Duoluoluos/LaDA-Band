@@ -142,34 +142,6 @@
         white-space: nowrap;
       }
 
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
-
-      .nav-links a {
-        min-height: 36px;
-        padding: 9px 11px;
-        border: 1px solid transparent;
-        border-radius: var(--radius);
-        color: rgba(255, 255, 255, 0.76);
-        font-size: 14px;
-        text-decoration: none;
-      }
-
-      .nav-links a:hover,
-      .nav-links a:focus-visible {
-        border-color: rgba(255, 255, 255, 0.22);
-        color: var(--paper-2);
-        outline: none;
-      }
-
-      .nav-links .github-link {
-        border-color: rgba(255, 255, 255, 0.24);
-        color: var(--paper-2);
-      }
-
       .hero {
         position: relative;
         min-height: 640px;
@@ -737,10 +709,6 @@
           width: min(100% - 24px, 1180px);
         }
 
-        .nav-links a:not(.github-link) {
-          display: none;
-        }
-
         .hero {
           min-height: 620px;
           padding-top: 96px;
@@ -848,12 +816,6 @@
           <span class="brand-mark" aria-hidden="true"></span>
           <span>LaDA-Band</span>
         </a>
-        <div class="nav-links">
-          <a href="#method">Method</a>
-          <a href="#demos">Demos</a>
-          <a href="#ablation">Ablation</a>
-          <a class="github-link" href="https://github.com/Duoluoluos/LaDA-Band">GitHub</a>
-        </div>
       </nav>
     </header>
 
