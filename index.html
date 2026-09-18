@@ -251,6 +251,11 @@
         margin-bottom: 28px;
       }
 
+      .hero-resources {
+        display: flex;
+        gap: 12px;
+      }
+
       .button {
         display: inline-flex;
         align-items: center;
@@ -271,10 +276,37 @@
         background: var(--lime);
       }
 
+      .button.resource-link {
+        gap: 8px;
+        white-space: nowrap;
+        border-color: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .button.huggingface-link {
+        border-color: rgba(255, 210, 74, 0.5);
+        background: rgba(255, 210, 74, 0.1);
+      }
+
+      .button-icon {
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
+        object-fit: contain;
+      }
+
+      .github-icon {
+        filter: invert(1);
+      }
+
       .button:hover,
       .button:focus-visible {
         transform: translateY(-1px);
-        outline: none;
+      }
+
+      .button:focus-visible {
+        outline: 2px solid var(--cyan);
+        outline-offset: 4px;
       }
 
       .sound-strip {
@@ -766,6 +798,21 @@
           margin-bottom: 20px;
         }
 
+        .hero-actions {
+          flex-direction: column;
+        }
+
+        .hero-resources {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .button.resource-link {
+          min-width: 0;
+          padding: 12px;
+          font-size: 14px;
+        }
+
         .band {
           padding: 52px 0;
         }
@@ -805,7 +852,7 @@
           <a href="#method">Method</a>
           <a href="#demos">Demos</a>
           <a href="#ablation">Ablation</a>
-          <a class="github-link" href="https://github.com/Duoluoluos/TME-LaDA-Band">GitHub</a>
+          <a class="github-link" href="https://github.com/Duoluoluos/LaDA-Band">GitHub</a>
         </div>
       </nav>
     </header>
@@ -821,9 +868,19 @@
               arrangements from vocal and text inputs, with dynamic orchestration,
               global coherence, and acoustic authenticity at song scale.
             </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#demos">Listen to comparisons</a>
-              <a class="button" href="#method">View method overview</a>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#demos">Listen to comparisons</a>
+            <a class="button" href="#method">View method overview</a>
+            <div class="hero-resources">
+              <a class="button resource-link" href="https://github.com/Duoluoluos/LaDA-Band" target="_blank" rel="noopener noreferrer" title="View source on GitHub (opens in a new tab)">
+                <img class="button-icon github-icon" src="assets/icons/github.svg" width="22" height="22" alt="" aria-hidden="true" />
+                <span>GitHub</span>
+              </a>
+              <a class="button resource-link huggingface-link" href="https://huggingface.co/sDuoluoluos/LaDA-Band" target="_blank" rel="noopener noreferrer" title="View model on Hugging Face (opens in a new tab)">
+                <img class="button-icon" src="assets/icons/huggingface.svg" width="22" height="22" alt="" aria-hidden="true" />
+                <span>Hugging Face</span>
+              </a>
             </div>
           </div>
         </div>
@@ -1385,7 +1442,7 @@
           LaDA-Band project page.
         </p>
         <p>
-          <a href="https://github.com/Duoluoluos/TME-LaDA-Band">Page source</a>
+          <a href="https://github.com/Duoluoluos/LaDA-Band">Page source</a>
           ·
           <a href="https://github.com/Duoluoluos/LaDA-Band">Audio assets</a>
         </p>
