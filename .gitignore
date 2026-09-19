@@ -20,6 +20,11 @@
 *.wave
 *.wma
 
+# Published audio comparisons are part of the GitHub Pages site.
+!/full-song-demo-IHP/*.mp3
+!/full-song-demo-suno70k/*.mp3
+!/ablation/*.mp3
+
 # Python, notebooks, and local tooling.
 .DS_Store
 __pycache__/

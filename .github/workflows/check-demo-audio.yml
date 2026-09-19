@@ -1,0 +1,17 @@
+name: Check demo audio
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check-audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check bundled audio files
+        run: python3 scripts/check_demo_audio.py
