@@ -7,7 +7,7 @@
     <a href="https://huggingface.co/sDuoluoluos/LaDA-Band">
       <img src="https://img.shields.io/badge/Hugging%20Face-Models-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face">
     </a>
-    <a href="https://duoluoluos.github.io/TME-LaDA-Band/">
+    <a href="https://duoluoluos.github.io/LaDA-Band/">
       <img src="https://img.shields.io/badge/Project%20Page-Demos-4c1?style=for-the-badge&logo=github&logoColor=white" alt="Project Page">
     </a>
   </p>
@@ -15,7 +15,6 @@
 
 LaDA-Band generates an accompaniment from a dry vocal and an optional text description. It frames vocal-to-accompaniment generation as discrete masked diffusion with dual-track prefix conditioning and a two-stage training curriculum, targeting musical coherence and dynamic orchestration alongside acoustic quality.
 
-> **ACM Multimedia 2026 (ACM MM '26).** See the [paper](https://arxiv.org/abs/2604.11052) and listen on the [interactive project page](https://duoluoluos.github.io/TME-LaDA-Band/).
 
 ## News
 
